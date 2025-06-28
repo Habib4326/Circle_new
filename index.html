@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Catalog</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #1a1a1a; color: white; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .movie-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        .movie-card { background: #2a2a2a; border-radius: 8px; overflow: hidden; transition: transform 0.3s; }
+        .movie-card:hover { transform: scale(1.05); }
+        .movie-poster { width: 100%; height: 300px; object-fit: cover; }
+        .movie-info { padding: 10px; }
+        .movie-title { font-size: 16px; font-weight: bold; margin-bottom: 5px; }
+        .movie-year { color: #888; font-size: 14px; }
+        .movie-rating { color: #f39c12; font-size: 14px; }
+        .no-poster { width: 100%; height: 300px; background: #444; display: flex; align-items: center; justify-content: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Catalog</h1>
+        <p>Total Movies: 38</p>
+        <div class="movie-grid">
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/84YVJuVaJ0tlo244eRUTNdIe9uL.jpg" alt="Anuja" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Anuja</div>
+                    <div class="movie-year">2024</div>
+                    <div class="movie-rating">★ 6.529/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/kIVEh2SlMqbBbDdFl55e7VTjfH1.jpg" alt="Azaad" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Azaad</div>
+                    <div class="movie-year">2000</div>
+                    <div class="movie-rating">★ 5.8/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/6bvW47MtJKo2ipPYJ2xDvdf4zbz.jpg" alt="Be Happy" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Be Happy</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 6.3/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/plWzFq6eVXOm8vpgJG0xUGmifHS.jpg" alt="Bhool Chuk Maaf" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Bhool Chuk Maaf</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 6.3/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/ubRsrzb6NRW8YhVTJ6jG1kpNvCi.jpg" alt="Chhaava" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Chhaava</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 6.763/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/mCgKANxZJW645pXdmJdBb4ysRPk.jpg" alt="Chhorii 2" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Chhorii 2</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 4.5/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/yVMkRDvLSxOdDIHtc5oaVfBbQs5.jpg" alt="Costao" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Costao</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 8.25/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/t5dni7rxQCarDgQWaOpma7oOcGq.jpg" alt="Crazxy" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Crazxy</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 5.192/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/6IESojUkiiLSWBZ9CVEsmwvul9z.jpg" alt="Deva" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Deva</div>
+                    <div class="movie-year">2019</div>
+                    <div class="movie-rating">★ 4.8/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/2E7me3rPi8HqaeheuD86YlpNX6k.jpg" alt="Dhoom Dhaam" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Dhoom Dhaam</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 6.676/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/b1OVtVtcC7KQlsueXCwBSRaAR1o.jpg" alt="Emergency" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Emergency</div>
+                    <div class="movie-year">2022</div>
+                    <div class="movie-rating">★ 6.1/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/1LWntJsxlkq86gEWOkR1JmUbGF6.jpg" alt="Fateh" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Fateh</div>
+                    <div class="movie-year">1991</div>
+                    <div class="movie-rating">★ 1.0/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/jTTanaPl3Bi0UC9M2EcYMRQNdu6.jpg" alt="Ground Zero" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Ground Zero</div>
+                    <div class="movie-year">2000</div>
+                    <div class="movie-rating">★ 4.227/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/zgyRlHt99KiBq7ZxY3tfoFQ5rLJ.jpg" alt="Hisaab Barabar" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Hisaab Barabar</div>
+                    <div class="movie-year">2024</div>
+                    <div class="movie-rating">★ 4.5/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/iGvGkVOfsooO0ZBrhN5i6zXYUCy.jpg" alt="Housefull 5" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Housefull 5</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 5.8/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/49WtQewB8rVORiWFVxOiRsxtFKI.jpg" alt="Interrogation" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Interrogation</div>
+                    <div class="movie-year">2016</div>
+                    <div class="movie-rating">★ 5.8/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="no-poster">No Poster</div>
+                <div class="movie-info">
+                    <div class="movie-title">Jäät</div>
+                    <div class="movie-year">2010</div>
+                    <div class="movie-rating">★ 6.0/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/eujLbO0kf1eqWC8XpHUJdtAVW2J.jpg" alt="Jewel Thief - The Heist Begins" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Jewel Thief - The Heist Begins</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 6.735/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/jgGSqe1YgSot6Y1zDVTVkbsZ46z.jpg" alt="Kesari Chapter 2: The Untold Story of Jallianwala Bagh" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Kesari Chapter 2: The Untold Story of Jallianwala Bagh</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 6.909/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/iBM6DqjVbuY5y44d96mb9QVcAqr.jpg" alt="Logout" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Logout</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 5.75/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/ohHiDAwaOo6R1ovMgmUhrBuvknU.jpg" alt="Loveyapa" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Loveyapa</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 5.25/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/v9l1YvBzAFklJz1r1IqxXHKBj8V.jpg" alt="Maa" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Maa</div>
+                    <div class="movie-year">2022</div>
+                    <div class="movie-rating">★ 0.0/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/fQMBYG4JOD6WN8QzViPYqxuIsru.jpg" alt="Mere Husband Ki Biwi" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Mere Husband Ki Biwi</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 6.3/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/pzGef8atZialx2FWy65XrMtcZ92.jpg" alt="Mrs." class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Mrs.</div>
+                    <div class="movie-year">2016</div>
+                    <div class="movie-rating">★ 0.0/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/iY9GteV9Cf0G4m0tGakAXrpy6Bq.jpg" alt="Raid 2" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Raid 2</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 5.846/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/me7RIXcNdZqaBpXW4swBKNIN12Z.jpg" alt="RIWAJ" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">RIWAJ</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 0.0/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/41s42CRXafa3OuRGvCtfYPEBmse.jpg" alt="Sikandar" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Sikandar</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 4.818/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/6KV57QMXZXxkZB3LQHiUpPD2q16.jpg" alt="Sister Midnight" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Sister Midnight</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 6.4/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/eQq9A4AEKyv9R9kJQ9mkd0fYZ7S.jpg" alt="Sitaare Zameen Par" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Sitaare Zameen Par</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 7.8/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/pmtev9YTlIRDo25G7lN8dzyoszn.jpg" alt="Sky Force" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Sky Force</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 6.569/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/xR5Endhjm4soY6fPgXY0jrpDZvL.jpg" alt="Stolen" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Stolen</div>
+                    <div class="movie-year">2023</div>
+                    <div class="movie-rating">★ 7.5/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/l5PDjfWpC9uY5HdF5cbsJ4wjqoq.jpg" alt="Superboys of Malegaon" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Superboys of Malegaon</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 7.66/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/fMsr2NPNghX76VML7xb1FdRzU1P.jpg" alt="Sweet Dreams" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Sweet Dreams</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 5.0/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/7hY958sJ5xfXSBS3hiBtMxpOqRK.jpg" alt="The Bhootnii" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">The Bhootnii</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 8.0/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/6JhTuQwNPICVKCMsPQHCpJUFGOc.jpg" alt="The Diplomat" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">The Diplomat</div>
+                    <div class="movie-year">2015</div>
+                    <div class="movie-rating">★ 6.6/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/6JhTuQwNPICVKCMsPQHCpJUFGOc.jpg" alt="The Diplomat" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">The Diplomat</div>
+                    <div class="movie-year">2015</div>
+                    <div class="movie-rating">★ 6.6/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/ezZWkcI8FOQmJj6aPAADV7dg12.jpg" alt="The Mehta Boys" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">The Mehta Boys</div>
+                    <div class="movie-year">2024</div>
+                    <div class="movie-rating">★ 6.2/10</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/wYaBscYbcCFTWuGlwQVtpsl8O3O.jpg" alt="Tumko Meri Kasam" class="movie-poster">
+                <div class="movie-info">
+                    <div class="movie-title">Tumko Meri Kasam</div>
+                    <div class="movie-year">2025</div>
+                    <div class="movie-rating">★ 5.0/10</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
